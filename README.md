@@ -1,8 +1,6 @@
-# Ars Magna theme for Obsidian
+# Vintage theme for Obsidian
 
-_The World is bound with Secret Knots  -- A. Kircher_
-
-A theme for Obsidian that is a synthesis of lots of other people's work, as is fitting. Originally based on [deathau's](https://github.com/deathau) Notation theme, incorporating his and [cotemaxime's) · GitHub](https://github.com/cotemaxime) work on [Andy Matuschak mode](https://forum.obsidian.md/t/andy-matuschak-mode-v2-7-updated-for-0-7-new-panes/170), plus a few other things that I wanted. Works equally well in lucis or umbra modes.
+A theme for Obsidian forked from [mediapathic's arsmagna theme](https://github.com/mediapathic/obsidian-arsmagna-theme) with thorough commenting plus a pallette shift towards [GuangluWu's pisum theme](https://github.com/GuangluWu/obsidian-pisum).
 
 ## Install
 
@@ -17,4 +15,3 @@ It's licensed under [The Unlicense](./LICENSE).
 
 ## Screenshots
 
-![](arsmagna.png)
