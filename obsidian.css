@@ -1,13 +1,11 @@
 
-/*====================_Ars Magna Lucis et Umbrae_===================*/
-/* 2020-06-28 Theme by @mediapathic, but honeslty mostly composed of bits from @death_au and @cotemaxime, */
-/* and a few other fragments here and there.  */
+/*====================_Vintage_===================*/
+/* 2020-08-05 Theme by @hollyhudson, derived from the work of @mediapathic and @GuangluWu */
 
 
 /* font */
 
 body {
-  /* font stacks taken directly from Notion */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   --font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   -webkit-font-smoothing: auto;
@@ -37,6 +35,7 @@ body.theme-light, body.theme-dark  {
   --interactive-normal:         #2a2a2a; /* dark grey */
   --interactive-hover:          #303030; /* dark grey */
   --text-link:                  #ababab; /* light grey */
+  --vim-cursor:					#c6c6c6;
 
   --GText: hsl(var(--hue), var(--sat), 90%);
   --GFill: hsl(var(--hue), var(--sat), 50%);
@@ -57,6 +56,7 @@ body.theme-light, body.theme-dark  {
   --interactive-normal:         #f2f3f5; /* light grey */
   --interactive-hover:          #e9e9e9;
   --text-link:                  rgba(255, 180, 0); /* orange */
+  --vim-cursor:					#c6c6c6;
 
   --GText: hsl(var(--hue), var(--sat), 1i0%);
   --GFill: hsl(var(--hue), var(--sat), 50%);
@@ -94,7 +94,50 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
   font-weight: 600;
 }
 
-/* headings */
+/*-------------------------------------*/
+/*      Search the following lines     */
+/*     to jump to specific section     */
+/*-------------------------------------*/
+/*  resize-handle and borders          */
+/*              Tags               */
+/*             	Links              */
+/*              Cursor               */
+/* basic format in EDITOR and PREVIEW */
+/* Headings - EDITOR and PREVIEW */
+/*         Code block in  Preview      */
+/*       Code block in Editor          */
+/*              Brackets               */
+/*             Blockquote              */
+/*             table                   */
+/*               Checkbox              */
+/*           html in editor            */
+/*              popover                */
+/*            Side panel               */
+/* internal embedded link in preview   */
+/*             graph view              */
+/*            settings                 */
+/*            Hide side bar            */
+/*           width of content          */
+/*  note header bar for non-andy mode */
+/* andy mode activated in light mode  */
+/*    at a rule line before ul list    *
+/*  Hide Scrollbar (recommend for mac)  */
+/*-------------------------------------*/
+
+/***************************************/
+/*                Cursor               */
+/***************************************/
+
+.cm-fat-cursor .CodeMirror-cursor{
+  width: 0.5em;
+  background: var(--vim-cursor);
+  opacity: 60% !important;
+}
+
+/*********************************/
+/* Headings - EDITOR and PREVIEW */
+/*********************************/
+
 .markdown-preview-view h1{
   font-size: 30px;
   margin-top: 32px;
@@ -122,14 +165,16 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
 .cm-s-obsidian .cm-header-6{ font-size: 20px; }
 .cm-s-obsidian .cm-header-6 { color: var(--text-muted); }
 
-/* links */
+/*********************************/
+/*             Links              */
+/*********************************/
+
 .external-link {
   background-image: none; /* no external link indicator */
   padding:0;
   border-bottom: 1px solid var(--background-modifier-border);
-  /*color: var(--text-normal);*/
   color: rgba(255, 180, 0); /* orange */
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .markdown-preview-view .internal-link, .popover.hover-popover .markdown-embed .internal-link {
@@ -138,24 +183,11 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
   text-overflow: ellipsis;
   font-weight: 500;
   line-height: 1.3;
-  /*border-bottom: 1px solid var(--background-modifier-border);*/
-  /*color: var(--text-normal);*/
   color: var(--text-link);
   text-decoration: none;
 }
 
-/* Nifty SVG arrow before external links */
-/*
-.external-link::before {
-  content: " ";
-  background-color: var(--text-normal);
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpolygon points='5.4 26 24 7.4 24 20 26 20 26 4 10 4 10 6 22.6 6 4 24.6'%3E%3C/polygon%3E%3C/svg%3E");
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  margin-right: 4px;
-}
-*/
+
 
 /* embeds (mimics embedded tables from Notion) */
 .markdown-embed-title {
