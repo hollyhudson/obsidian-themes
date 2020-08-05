@@ -18,7 +18,8 @@ body.theme-light, body.theme-dark  {
   --hue: 203;
   --sat: 8%;
   --interactive-accent-rgb: 200, 120, 0;
-  --code: #EB5757;
+  /*--code: #EB5757; red */
+  --code: #0a9fca;
 }
 
 /* Dark theme */
@@ -28,13 +29,14 @@ body.theme-light, body.theme-dark  {
   --L2: 20%;
   --L3: 25%;
 
-  --pulp-color:  rgba(255, 180, 0, 0.75);
+  --pulp-color:  rgba(255, 180, 0, 0.75); /* orange */
   --text-rgb: 240, 240, 240;
 
-  --text-highlight-bg:          rgb(89, 86, 59);
-  --text-selection:             var(--pulp-color);
-  --interactive-normal:         #2a2a2a;
-  --interactive-hover:          #303030;
+  --text-highlight-bg:          rgb(89, 86, 59); /* dark grey */
+  --text-selection:             rgba(197, 198, 200, 0.15);
+  --interactive-normal:         #2a2a2a; /* dark grey */
+  --interactive-hover:          #303030; /* dark grey */
+  --text-link:                  #ababab; /* light grey */
 
   --GText: hsl(var(--hue), var(--sat), 90%);
   --GFill: hsl(var(--hue), var(--sat), 50%);
@@ -48,12 +50,13 @@ body.theme-light, body.theme-dark  {
   --L2: 96%;
   --L3: 90%;
 
-  --text-rgb: 55, 53, 47;
+  --text-rgb: 55, 53, 47; /* dark grey */
 
-  --text-highlight-bg:          rgb(251, 243, 219);
-  --text-selection:             rgba(255, 180, 0, 0.15);
-  --interactive-normal:         #f2f3f5;
+  --text-highlight-bg:          rgb(251, 243, 219); /* cream */
+  --text-selection:             rgba(255, 180, 0, 0.15); /* orange */
+  --interactive-normal:         #f2f3f5; /* light grey */
   --interactive-hover:          #e9e9e9;
+  --text-link:                  rgba(255, 180, 0); /* orange */
 
   --GText: hsl(var(--hue), var(--sat), 1i0%);
   --GFill: hsl(var(--hue), var(--sat), 50%);
@@ -123,7 +126,10 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
 .external-link {
   background-image: none; /* no external link indicator */
   padding:0;
-  color: var(--text-normal);
+  border-bottom: 1px solid var(--background-modifier-border);
+  /*color: var(--text-normal);*/
+  color: rgba(255, 180, 0); /* orange */
+  text-decoration: none;
 }
 
 .markdown-preview-view .internal-link, .popover.hover-popover .markdown-embed .internal-link {
@@ -132,14 +138,15 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
   text-overflow: ellipsis;
   font-weight: 500;
   line-height: 1.3;
-  border-bottom: 1px solid var(--background-modifier-border);
-  color: var(--text-normal);
+  /*border-bottom: 1px solid var(--background-modifier-border);*/
+  /*color: var(--text-normal);*/
+  color: var(--text-link);
   text-decoration: none;
 }
 
-/* Nifty SVG arrow before internal links */
-/* Also applies to embeds */
-.internal-link::before, .markdown-embed-link::before {
+/* Nifty SVG arrow before external links */
+/*
+.external-link::before {
   content: " ";
   background-color: var(--text-normal);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpolygon points='5.4 26 24 7.4 24 20 26 20 26 4 10 4 10 6 22.6 6 4 24.6'%3E%3C/polygon%3E%3C/svg%3E");
@@ -148,6 +155,7 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
   height: 1em;
   margin-right: 4px;
 }
+*/
 
 /* embeds (mimics embedded tables from Notion) */
 .markdown-embed-title {
@@ -160,7 +168,7 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
 .markdown-preview-view .markdown-embed {
   border:none;
   margin:0;
-  border-bottom: 1px solid var(--background-modifier-border);
+  /*border-bottom: 1px solid var(--background-modifier-border);*/
   border-radius: 0;
 }
 
@@ -171,16 +179,18 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
   height: 30px;
   width: calc(100% - 20px);
   margin-left: 4px;
-  border-bottom: 1px solid var(--background-modifier-border);
+  /*border-bottom: 1px solid var(--background-modifier-border);*/
 }
 
 .markdown-embed-link::before {
   font-size: 0.8em;
 }
 
+/*
 .markdown-embed-link svg {
-  display: none; /* hide the svg link icon, gets replaced with a nifty arrow */
+  display: none; / hide the svg link icon, gets replaced with a nifty arrow /
 }
+*/
 
 /* table headers and first column styling */
 .markdown-preview-view th:first-child, .markdown-preview-view td:first-child {
