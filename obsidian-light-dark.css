@@ -1,5 +1,5 @@
 
-/*====================_Vintage_===================*/
+/*==================== Triangle: Light/Dark ===================*/
 /* 2020-08-05 Theme by @hollyhudson, derived from the work of @mediapathic and @GuangluWu */
 
 
@@ -34,7 +34,8 @@ body.theme-light, body.theme-dark  {
   --text-selection:             rgba(197, 198, 200, 0.15);
   --interactive-normal:         #2a2a2a; /* dark grey */
   --interactive-hover:          #303030; /* dark grey */
-  --text-link:                  #ababab; /* light grey */
+	/* internal links */
+  --text-accent:                #ababab; /* light grey */
   --vim-cursor:					#c6c6c6;
 
   --GText: hsl(var(--hue), var(--sat), 90%);
@@ -55,7 +56,7 @@ body.theme-light, body.theme-dark  {
   --text-selection:             rgba(255, 180, 0, 0.15); /* orange */
   --interactive-normal:         #f2f3f5; /* light grey */
   --interactive-hover:          #e9e9e9;
-  --text-link:                  rgba(255, 180, 0); /* orange */
+  --text-accent:                  rgba(255, 180, 0); /* orange */
   --vim-cursor:					#c6c6c6;
 
   --GText: hsl(var(--hue), var(--sat), 1i0%);
@@ -71,8 +72,8 @@ body.theme-light, body.theme-dark {
   --background-secondary-alt:   hsl(var(--hue), var(--sat), var(--L3));
   --background-accent:          hsl(var(--hue), var(--sat), var(--L0));
   --background-modifier-border: rgba(var(--text-rgb), 0.14);
-  --text-accent:                rgba(var(--text-rgb), 0.45);
-  --text-accent-hover:          rgba(var(--text-rgb), 0.45);
+  --text-accent:                rgba(var(--text-rgb), 0.45); /* links */
+  --text-accent-hover:          rgba(var(--text-rgb), 0.45); /* links */
   --text-normal:                rgba(var(--text-rgb), 0.9);
 /*  --text-muted:                 rgba(var(--text-rgb), 0.45); /* subtle mode */
   --text-muted:                 var(--pulp-color);        /* Full Pulp */
@@ -183,7 +184,7 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
   text-overflow: ellipsis;
   font-weight: 500;
   line-height: 1.3;
-  color: var(--text-link);
+  color: var(--text-accent);
   text-decoration: none;
 }
 
