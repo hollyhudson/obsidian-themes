@@ -1,67 +1,63 @@
 
-/*==================== Triangle: Afternoon ===================*/
-/* 2020-08-05 Theme by @hollyhudson, derived from the work of @mediapathic, @GuangluWu, and @chad-bennett */
+/*==================== Triangle: Neon 80s Remix ===================*/
+/* 2020-08-05 Theme by @hollyhudson, derived from the work of @mediapathic, @GuangluWu, and @deathau */
 
 
-/* afternoon theme */
+/* neon80sremix theme */
 .theme-dark, .theme-light {
   --L0: 0%;
   --L1: 100%;
   --L2: 96%;
   --L3: 90%;
 
-  --vim-cursor:					#c6c6c6;
+	--vim-cursor:					#c6c6c6;
+    --accent-1: #FF00FF;
+    --accent-2: #00FFFF;
+    --accent-3: #00FF00;
+    --accent-4: #FFFF00;
+    --accent-5: #FF0000;
+    --accent-6: #0000FF;
 
-  --GText: hsl(var(--hue), var(--sat), 1i0%);
-  --GFill: hsl(var(--hue), var(--sat), 50%);
-  --GLine: hsl(var(--hue), var(--sat), var(--L3));
+    --accent-1-muted: #ff79c6;
+    --accent-2-muted: #8be9fd;
+    --accent-3-muted: #50fa7b;
+    --accent-4-muted: #ffb86c;
+    --accent-5-muted: #ff5555;
+    --accent-6-muted: #bd93f9;
 
-    --background-primary: #edece8; 	
-    --background-primary-alt: #edece8;
-    --background-secondary: #f6f6f4;
-    --background-secondary-alt: #e0deda;
-    --background-accent: #fff;
-    --background-modifier-border: #ddd;
-    --background-modifier-form-field: #fff;
-    --background-modifier-form-field-highlighted: #fff;
-    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-    --background-modifier-success: #A4E7C3;
-    --background-modifier-error: #e68787;
-    --background-modifier-error-rgb: 230, 135, 135;
-    --background-modifier-error-hover: #FF9494;
-    --background-modifier-cover: rgba(0, 0, 0, 0.8);
+    --background-primary: #2b213a;
+    --background-primary-alt: #171520;
+    --background-secondary: #1a1836;
+    --background-secondary-alt: #242043;
 
-	/* internal links */
-  	--text-accent:			#266f92; /* deep blue */
-  	--text-accent-hover:	#a7582d; /* rust */
+    --text-accent: #FF1690;
+    --text-accent-hover: #7a6ae6;
 
-    --text-normal: #1b1b1b;
-    --text-muted: #666666;
-    --text-faint: #999999;
-    --text-error: #800000;
-    --text-error-hover: #990000;
+    --text-normal: var(--accent-1);
+    --text-muted: var(--accent-1-muted);
+    --text-faint: var(--accent-6-muted);
 
-    --text-highlight-bg: #d0d6b1;
-    --text-highlight-bg2: #d5dcb6;
-    --text-selection: #cad8d7;
-    --text-on-accent: #f2f2f2;
-    --text-tags: #896b97;
-    --interactive-normal: #f2f3f5;
-    --interactive-hover: #e9e9e9;
-    --interactive-accent: #92a85b;
-    --interactive-accent-rgb: 146, 168, 91;
-    --interactive-accent-hover: #698524;
-    --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
-    --scrollbar-bg: rgba(0, 0, 0, 0.05);
-    --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
-  	--text-normal:                rgba(var(--text-rgb), 0.9);
-	--text-muted:                 #666666;
-  --text-muted:                 var(--pulp-color);        /* Full Pulp */
-  --text-faint:                 rgba(var(--text-rgb), 0.25);
-  --text-on-accent:             rgba(var(--text-rgb), 0.9);
-  --interactive-accent:         rgb(var(--interactive-accent-rgb));
-  --interactive-accent-hover:   rgba(var(--interactive-accent-rgb), 0.8);
+    --interactive-normal: var(--accent-2);
+    --interactive-hover: var(--accent-2-muted);
+    --interactive-accent: var(--accent-2);
+    --interactive-accent-hover: var(--accent-2-muted);
+
+    --background-accent: #000;
+    --background-modifier-border: var(--accent-2);
+
+    --text-highlight-bg: #ffd319;
+
+
+    /* obsidian dark defaults (overriding for light) */
+    --text-selection: rgba(0, 122, 255, 0.2);
+    --text-on-accent: rgba(255,255,255,0.8);
+    --interactive-accent-rgb: 72, 54, 153;
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+
 	--font-family: Metropolis, "Segoe UI", Helvetica, "Apple Color Emoji", Avenir, sans-serif;
+	--font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 /* font */
@@ -82,39 +78,7 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
   font-weight: 500;
 }
 
-/*-------------------------------------*/
-/*      Search the following lines     */
-/*     to jump to specific section     */
-/*-------------------------------------*/
-/*  resize-handle and borders          */
-/*              Tags               */
-/*             	Links              */
-/*              Cursor               */
-/* basic format in EDITOR and PREVIEW */
-/* Headings - EDITOR and PREVIEW */
-/*         Code block in  Preview      */
-/*       Code block in Editor          */
-/*              Brackets               */
-/*             Blockquote              */
-/*             table                   */
-/*               Checkbox              */
-/*           html in editor            */
-/*              popover                */
-/*            Side panel               */
-/* internal embedded link in preview   */
-/*             graph view              */
-/*            settings                 */
-/*            Hide side bar            */
-/*           width of content          */
-/*  note header bar for non-andy mode */
-/* andy mode activated in light mode  */
-/*    at a rule line before ul list    *
-/*  Hide Scrollbar (recommend for mac)  */
-/*-------------------------------------*/
-
-/***************************************/
 /*                Cursor               */
-/***************************************/
 
 .cm-fat-cursor .CodeMirror-cursor{
   width: 0.5em;
@@ -122,9 +86,27 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
   opacity: 60% !important;
 }
 
-/*********************************/
-/* Headings - EDITOR and PREVIEW */
-/*********************************/
+
+/*            General UI                */
+.side-dock-ribbon-tab, .side-dock-ribbon-action {
+    color: var(--accent-6-muted);
+}
+
+.workspace-leaf.mod-active .workspace-leaf-header-title
+{ color: var(--text-accent); }
+
+/*          Editor and preview           */
+.cm-s-obsidian, .markdown-preview-view {
+    --text-normal: rgba(255,220,255,0.8);
+    --text-faint: rgba(255,220,255,0.25);
+    --text-accent: var(--accent-2);
+    color: var(--text-normal);
+}
+.CodeMirror-guttermarker-subtle {
+    color: var(--accent-1);
+}
+
+/*        Headers - geometry           */
 
 .markdown-preview-view h1{
   font-size: 30px;
@@ -145,72 +127,158 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
     margin-bottom: 0px;
 }
 
-.cm-s-obsidian .cm-header-1 { font-size: 30px; }
-.cm-s-obsidian .cm-header-2 { font-size: 24px; }
-.cm-s-obsidian .cm-header-3,
-.cm-s-obsidian .cm-header-4,
-.cm-s-obsidian .cm-header-5,
-.cm-s-obsidian .cm-header-6{ font-size: 20px; }
-.cm-s-obsidian .cm-header-6 { color: var(--text-muted); }
+.cm-s-obsidian .cm-header-1{ font-size: 30px; overflow: visible; }
+.cm-s-obsidian .cm-header-2{ font-size: 24px; overflow: visible; }
+.cm-s-obsidian .cm-header-3{ overflow: visible; }
+.cm-s-obsidian .cm-header-4{ overflow: visible; }
+.cm-s-obsidian .cm-header-5{ overflow: visible; }
+.cm-s-obsidian .cm-header-6{ font-size: 20px; overflow: visible; }
 
-/*********************************/
+/*        Headers - colors           */
+
+.cm-header-1:not(.cm-formatting), h1 {
+    text-shadow: 0 0 0.5em var(--accent-1);
+}
+.cm-header-2:not(.cm-formatting), h2 {
+    text-shadow: 0 0 0.5em var(--accent-2);
+}
+.cm-header-3:not(.cm-formatting), h3 {
+    text-shadow: 0 0 0.5em var(--accent-3);
+}
+.cm-header-4:not(.cm-formatting), h4 {
+    text-shadow: 0 0 0.5em var(--accent-4);
+}
+.cm-header-5:not(.cm-formatting), h5 {
+    text-shadow: 0 0 0.5em var(--accent-5);
+}
+.cm-header-6:not(.cm-formatting), h6 {
+    text-shadow: 0 0 0.5em var(--accent-6);
+}
+
+/*        formatting operators        */
+.cm-s-obsidian .cm-formatting,
+.cm-s-obsidian span.cm-formatting-link,
+.cm-s-obsidian span.cm-formatting-link-string.cm-url,
+.cm-s-obsidian span.cm-inline-code.cm-formatting-code,
+.cm-s-obsidian span.cm-formatting-code,
+.cm-s-obsidian span.cm-formatting-quote,
+.cm-s-obsidian span.cm-hr {
+    color: var(--accent-2);
+}
+
 /*             Links              */
-/*********************************/
 
-
-/* external links (rust -> blue)  */
-
+/* external links (pink) */
 .cm-s-obsidian .cm-formatting-link + .cm-formatting-link-string + .cm-url,
 .cm-s-obsidian .cm-string.cm-url,
 .cm-s-obsidian span.cm-link:not(.cm-formatting),
 .cm-s-obsidian span.cm-url,
 a {
-	color: var(--text-accent-hover) !important;
-	text-decoration: none !important;
-}
-
-/*
-.popover.hover-popover .markdown-embed a.external-link,
-a.external-link {
-	transition: color .4s;
-}
-
-a.external-link:hover {
-	color: var(--text-accent) !important;
+	color: var(--accent-1-muted);
 	text-decoration: none;
 }
 
-.cm-url {
-	color: var(--text-accent-hover) !important;
-}
-
-.cm-url:hover {
-    color: var(--text-accent) !important;
-    opacity: .8;
-    text-decoration: none;
-}
-
-*/
-
-/* in preview mode - internal links (blue -> rust) */
+/* internal links (magenta) */
 .popover.hover-popover .markdown-embed .internal-link,
 .markdown-preview-view .internal-link,
 a.internal-link,
 a.tag,
 .cm-s-obsidian span.cm-hashtag,
 .cm-s-obsidian span.cm-hmd-internal-link {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  /*font-weight: 500;*/
-  line-height: 1.3;
-  color: var(--text-accent) !important;
+  color: var(--accent-1);
   text-decoration: none;
 }
 
-.markdown-preview-view .internal-link:hover {
-  color: var(--text-accent-hover) !important;
-  text-decoration: none;
+/* code */
+.markdown-preview-view code,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian pre.HyperMD-codeblock {
+  color: var(--accent-1);
+  font-family: var(--font-monospace);
+}
+
+.cm-strikethrough, s {
+    text-decoration-color: var(--accent-1);
+}
+
+/* escape character */
+.cm-s-obsidian span.cm-hmd-escape-backslash {
+    color: var(--text-faint);
+}
+.cm-s-obsidian span.cm-hmd-escape-char {
+    color: var(--text-normal);
+}
+
+/* bullets and numbering */
+.cm-s-obsidian span.cm-formatting-list,
+.cm-s-obsidian span.cm-formatting-task {
+    color: var(--text-accent);
+}
+
+.cm-s-obsidian span.cm-formatting-list {
+    font-weight: bold;
+}
+
+/* bulleted lists */
+ul {
+  list-style-type: disc;
+  padding-inline-start: 40px;
+}
+ul ul {
+  padding-inline-start: 60px;
+}
+ul li:not(.task-list-item)::before {
+	color: var(--accent-2);
+	text-shadow: 0 0 0.5em var(--accent-2);
+}
+
+/* numbered lists */
+ol > li:not(.task-list-item)::before,
+ul ol > li:not(.task-list-item)::before,
+ul ul ol > li:not(.task-list-item)::before,
+ul ul ul ol > li:not(.task-list-item)::before {
+    color:  var(--accent-2);
+    overflow: visible;
+    text-shadow: 0 0 0.5em var(--accent-2);
+}
+
+.markdown-preview-view .task-list-item {
+  margin-left: -40px;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    border: 1px solid  var(--accent-2);
+    position: relative;
+    width: 1.25em;
+    height: 1.25em;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 6px;
+    box-shadow: 0 0 0.5em var(--accent-2);
+}
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+    content: '✘';
+    position: absolute;
+    color: var(--accent-2);
+    font-size:1em;
+    line-height: 1.25em;
+    width:1.2em;
+    text-align:center;
+    text-shadow: 0 0 0.5em var(--accent-2);
+}
+
+/* highlight */
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight,
+.markdown-preview-view mark,
+.search-result-file-matched-text {
+  color: var(--background-secondary);
+}
+.cm-s-obsidian span.cm-formatting-highlight {
+    color: var(--accent-2);
 }
 
 /* embeds (mimics embedded tables from Notion) */
@@ -276,17 +344,6 @@ a.tag,
   border-bottom: none;
 }
 
-/* this should strike through checked off items, once CSS supports :has
-  (it's draft right now) */
-.markdown-preview-view .task-list-item:has(.task-list-item-checkbox:checked) {
-  text-decoration: line-through;
-  color: var(--text-muted);
-}
-
-.markdown-preview-view .task-list-item {
-  margin-left: -40px;
-}
-
 /* Blockquotes */
 .markdown-preview-view blockquote, .cm-s-obsidian pre.HyperMD-quote-1 {
   border:none;
@@ -301,30 +358,6 @@ a.tag,
   margin: 3px 2px;
 }
 
-/* code */
-.markdown-preview-view code, .cm-s-obsidian span.cm-inline-code, .cm-s-obsidian pre.HyperMD-codeblock {
-  color: var(--code);
-  font-family: var(--font-monospace);
-}
-
-/* escape character */
-.cm-s-obsidian span.cm-hmd-escape-backslash {
-  color: var(--text-faint);
-}
-
-/* highlight */
-.markdown-preview-view mark {
-  color: var(--text-normal);
-}
-
-/* bulleted lists */
-ul {
-  list-style-type: disc;
-  padding-inline-start: 40px;
-}
-ul ul {
-  padding-inline-start: 60px;
-}
 
 /* graph view colours */
 .graph-view.color-fill {
