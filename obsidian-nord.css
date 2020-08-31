@@ -62,7 +62,7 @@
 	--vim-cursor:                 var(--orange);
 	--text-selection:             var(--dark3);
 	--font-family: Metropolis, "Segoe UI", Helvetica, "Apple Color Emoji", Avenir, sans-serif;
-	--font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
+	--font-monospace: "Victor Mono", "Hack Nerd Font", "Source Code Pro", monospace;
 }
 
 .theme-dark code[class*="language-"],

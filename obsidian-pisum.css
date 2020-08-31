@@ -18,13 +18,23 @@
 	--font-size-h4:                  20px;
 	--font-size-h5:                  19px;
 	--font-size-h6:                  18px;
-	--font-family-editor:            Avenir, Avenir Next, sans-serif;
-	--font-family-preview:           Avenir, Avenir Next, sans-serif;
 
 	--black:	#fff;
 	--dark0:	#2c383a;
 	--dark1:	#364549;
 	--dark2:	#415358;
+	--dark3:	#504945;
+
+	--cream0:	#fbf1c7;
+	--cream1:	#d5c4a1;
+	--cream2:	#bdae93;
+
+	--mustard:	#b57614;
+	--orange:	#fe8019;
+	--celadon:	#83a598;
+	--lavendar:	#b48ead;
+	--brick0:	#990000;
+	--brick1:	#800000;
 
 	--yellow:	#d79921;
 	--green:	#98971a;
@@ -32,7 +42,6 @@
 	--blue:		#458588;
 	--purple:	#b16286;
 	--red:		#d65d0e;
-	
 }
 
 .theme-dark,
@@ -43,49 +52,43 @@
 	--background-secondary: 	var(--dark2);
 	--background-secondary-alt:	var(--dark0);
 	--background-accent:		var(--black);
-	--text-normal: #fbf1c7;
-	--text-accent: #fe8019;
-	--text-accent-hover: #83a598;
-	--text-muted: #d5c4a1;
-	--text-faint: #bdae93;
-	--text-highlight-bg: rgba(181, 118, 20, 0.5);
-	--text-error: #800000;
-	--text-error-hover: #990000;
-	--background-modifier-border: #f2e5bc;
-	--background-modifier-form-field: rgba(0, 0, 0, 0.2);
-	--background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
-	--background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-	--background-modifier-success: #197300; /*no sure*/
-	--background-modifier-error: #3d0000; /*no sure*/
-	--background-modifier-error-rgb: 61, 0, 0;
-	--background-modifier-error-hover: #470000;
-	--background-modifier-cover: rgba(0, 0, 0, 0.6);
-	--text-selection: rgba(89, 75, 95, 0.99); /* Chromium precess this color with alpha channel */
-	--text-on-accent: #fbf1c7;
-	--interactive-normal: #b57614;
-	--interactive-hover: #fe8019;
-	--interactive-accent: #b57614;
-	--interactive-accent-rgb: 123, 108, 217;
-	--interactive-accent-hover: #fe8019;
-	--scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.4);
-	--scrollbar-bg: rgba(0, 0, 0, 0.05);
-	--scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
-	-font-family: Metropolis, "Segoe UI", Helvetica, "Apple Color Emoji", Avenir, sans-serif;
-	-font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
+	--text-normal: 				var(--cream0);
+	--text-accent:				var(--orange);
+	--text-accent-hover:		var(--celadon);
+	--text-muted: 				var(--cream1);
+	--text-faint:				var(--cream2);
+	--text-highlight-bg:		rgba(181, 118, 20, 0.5);
+	--text-error:				var(--brick1);
+	--text-error-hover:			var(--brick0);
+	--background-modifier-border:		var(--cream0);
+	--background-modifier-form-field:	rgba(0, 0, 0, 0.2);
+	--background-modifier-form-field-highlighted:	rgba(0, 0, 0, 0.5);
+	--background-modifier-box-shadow:	rgba(0, 0, 0, 0.3);
+	--text-selection: rgba(89, 75, 95, 0.99); 
+	--text-on-accent:			var(--cream0);
+	--interactive-normal:		var(--mustard);
+	--interactive-hover: 		var(--orange);
+	--interactive-accent:		var(--mustard);
+	--interactive-accent-hover:	var(--orange);
+	--scrollbar-active-thumb-bg:	rgba(0, 0, 0, 0.4);
+	--scrollbar-bg:					rgba(0, 0, 0, 0.05);
+	--scrollbar-thumb-bg:			rgba(0, 0, 0, 0.2);
+	--font-family: Metropolis, "Segoe UI", Helvetica, "Apple Color Emoji", Avenir, sans-serif;
+	--font-monospace: "Victor Mono", "Hack Nerd Font", "Source Code Pro", monospace;
 	
-	--text-title-h1:              var(--yellow);
-	--text-title-h2:              var(--green);
-	--text-title-h3:              var(--blue);
-	--text-title-h4:              var(--cyan);
-	--text-title-h5:              var(--purple);
-	--text-title-h6:              var(--red);
-	--inline-code:                #b48ead;
-	--code-block:                 #b48ead;
-	--pre-code-bg:                rgba(0, 0, 0, 0.2);
-	--blockquote-border:          #b57614;
-	--vim-cursor:                 var(--dark2);
-	--border-color:               #504945; /*also like transparent*/
-	--hover-bg:                   rgba(0, 0, 0, 0.5);
+	--text-title-h1:			var(--yellow);
+	--text-title-h2:			var(--green);
+	--text-title-h3:			var(--blue);
+	--text-title-h4:			var(--cyan);
+	--text-title-h5:			var(--purple);
+	--text-title-h6:			var(--red);
+	--inline-code:				var(--lavendar);
+	--code-block:				var(--lavendar);
+	--pre-code-bg:				rgba(0, 0, 0, 0.2);
+	--blockquote-border:		var(--mustard);
+	--vim-cursor:				var(--dark2);
+	--border-color:				var(--dark3);
+	--hover-bg:					rgba(0, 0, 0, 0.5);
 }
 
 .theme-dark code[class*="language-"],
