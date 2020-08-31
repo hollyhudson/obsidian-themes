@@ -1,20 +1,25 @@
 
-/*==================== Triangle: Afternoon ===================*/
-/* 2020-08-05 Theme by @hollyhudson, derived from the work of @mediapathic, @GuangluWu, and @chad-bennett */
+/*=========== remix of Warmth theme by @chad-bennett ===================*/
+/*==== https://github.com/chad-bennett/warmth-obsidian-theme ===========*/
+/*============== and the Arsmagna theme by @mediapathic ================*/
+/*==== https://github.com/mediapathic/obsidian-arsmagna-theme ==========*/
 
-
-/* afternoon theme */
+/* warmth theme palette */
 .theme-dark, .theme-light {
+/*
   --L0: 0%;
   --L1: 100%;
   --L2: 96%;
   --L3: 90%;
+*/
 
-  --vim-cursor:					#c6c6c6;
+	--vim-cursor:					#c6c6c6;
 
+/*
   --GText: hsl(var(--hue), var(--sat), 1i0%);
   --GFill: hsl(var(--hue), var(--sat), 50%);
   --GLine: hsl(var(--hue), var(--sat), var(--L3));
+*/
 
     --background-primary: #edece8; 	
     --background-primary-alt: #edece8;
@@ -54,13 +59,15 @@
     --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
     --scrollbar-bg: rgba(0, 0, 0, 0.05);
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+/*
   	--text-normal:                rgba(var(--text-rgb), 0.9);
 	--text-muted:                 #666666;
-  --text-muted:                 var(--pulp-color);        /* Full Pulp */
+  --text-muted:                 var(--pulp-color);        
   --text-faint:                 rgba(var(--text-rgb), 0.25);
   --text-on-accent:             rgba(var(--text-rgb), 0.9);
   --interactive-accent:         rgb(var(--interactive-accent-rgb));
   --interactive-accent-hover:   rgba(var(--interactive-accent-rgb), 0.8);
+*/
 	--font-family: Metropolis, "Segoe UI", Helvetica, "Apple Color Emoji", Avenir, sans-serif;
 }
 
@@ -68,8 +75,8 @@
 
 html,
 body {
-  font-family: var(--font-family) !important;
-  -webkit-font-smoothing: auto;
+	font-family: var(--font-family) !important;
+	-webkit-font-smoothing: auto;
 	font-weight: 400;
 }
 
@@ -82,49 +89,19 @@ h1, h2, h3, h4, h5, h6, strong, .cm-s-obsidian .cm-header {
   font-weight: 500;
 }
 
-/*-------------------------------------*/
-/*      Search the following lines     */
-/*     to jump to specific section     */
-/*-------------------------------------*/
-/*  resize-handle and borders          */
-/*              Tags               */
-/*             	Links              */
-/*              Cursor               */
-/* basic format in EDITOR and PREVIEW */
-/* Headings - EDITOR and PREVIEW */
-/*         Code block in  Preview      */
-/*       Code block in Editor          */
-/*              Brackets               */
-/*             Blockquote              */
-/*             table                   */
-/*               Checkbox              */
-/*           html in editor            */
-/*              popover                */
-/*            Side panel               */
-/* internal embedded link in preview   */
-/*             graph view              */
-/*            settings                 */
-/*            Hide side bar            */
-/*           width of content          */
-/*  note header bar for non-andy mode */
-/* andy mode activated in light mode  */
-/*    at a rule line before ul list    *
-/*  Hide Scrollbar (recommend for mac)  */
-/*-------------------------------------*/
-
-/***************************************/
 /*                Cursor               */
-/***************************************/
 
+/* removing the animation doesn't stop the blinking, */
+/* but it does make the cursor visible in insert mode. */
 .cm-fat-cursor .CodeMirror-cursor{
-  width: 0.5em;
-  background: var(--vim-cursor);
-  opacity: 60% !important;
+	width: 0.5em;
+	background-color: var(--vim-cursor) !important;
+	opacity: 60% !important;
+	animation: none; /* stop blinking! */
+	-webkit-animation: none;
 }
 
-/*********************************/
 /* Headings - EDITOR and PREVIEW */
-/*********************************/
 
 .markdown-preview-view h1{
   font-size: 30px;
@@ -422,6 +399,11 @@ ul ul {
 }
 .workspace-leaf.mod-active .view-header-title-container:after {
   background: linear-gradient(to bottom, transparent, var(--background-primary-alt));
+}
+
+/* make sure we can actually see this line */
+.workspace-leaf-resize-handle {
+	background-color: var(--background-secondary-alt); 	
 }
 
 /* swap the padding/margin around for the header and actions icons */
